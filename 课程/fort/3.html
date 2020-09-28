@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="1.php" method="post">
+        <fieldset>
+            <label>标题
+                <input type="text" title="title" name="A" pattern="[A-z] {5}"
+                required oninvalid="valid('用户名不能小于五位')">
+                <input hidden type="text" value="1232213212" title="title" name="B">
+            </label>
+            <label>介绍
+                <textarea name="介绍" id="111" cols="30" rows="10" placeholder="请介绍你自己">默认值</textarea>
+            </label>
+            <label>栏目
+                <select name="栏目[]">
+                    <optgroup label="娱乐">
+                      <option value="游戏">游戏</option>
+                      <option value="影视" selected>影视</option>
+                    </optgroup>
+                    <optgroup label="开发">
+                        <option value="MYSQL">MYSQL</option>
+                        <option value="WEB">WEB</option>
+                      </optgroup>
+                </select>
+
+            </label>
+        </fieldset>
+        <button>提交</button>
+        <!-- <button type="submit">提交</button>
+        <button type="button">提交</button>
+        <input type="submit" value="保存提交">
+        <input type="submit" name="put" value="提交">
+        <input type="submit" name="save" value="保存">
+         selected默认值 -->
+    </form>
+</body>
+<script>
+    function valid(message){
+        alert(message);
+    }
+</script>
+</html>

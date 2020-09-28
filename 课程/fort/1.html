@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="1.php" method="post">
+    <fieldset>
+        <!-- <legend>后盾人</legend>  GET地址发送 post数组发送
+        <label for="姓">标题</label>
+        <input type="text" id="姓" name="姓">
+        <hr>
+        <label for="名">价绍</label>
+        <input type="text" id="名" name="名"> -->
+        <legend>后盾人</legend>
+        <label>标题
+        <input readonly value="后盾人" type="text"  name="姓" maxlength="3" 
+        size="50" required>
+        </label>
+        <!-- readonly只看却发送；disabled只看不发送 -->
+        <hr>
+        <label>价绍
+        <input disabled type="text"  name="名" placeholder="不要姓">
+        <!-- <small>不要姓</small> -->
+        </label>
+        <label>来源
+            <input type="text"  name="source" value="后盾人">
+            <!--value默认值-->
+            </label>
+    </fieldset>
+    <button>提交</button>
+    </form>
+</body>
+</html>
